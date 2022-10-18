@@ -10,11 +10,14 @@ jobs:
   build:
 
     runs-on: ubuntu-20.04
+    
     steps:
+    
       - name: Get branch name
         id: branch-name
-      - uses: tj-actions/branch-names@v6
-        
-      - uses: yaphet17/Reusable-Workflows-POC/.github/workflows/maven.yml@${{ steps.branch-name.outputs.current_branch }}
-      - with:
+        uses: tj-actions/branch-names@v6
+      
+      - name: Call workflow
+        uses: yaphet17/Reusable-Workflows-POC/.github/workflows/maven.yml@${{ steps.branch-name.outputs.current_branch }}
+        with:
          jdk_version: 17
