@@ -8,6 +8,6 @@ on:
 
 jobs:
     build:
-        uses: yaphet/.github/workflows/maven.yml@main
+        uses: yaphet17/Reusable-Workflows-POC/.github/workflows/maven.yml@main
         with:
             java_version: 8

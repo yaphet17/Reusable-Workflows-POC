@@ -1,0 +1,13 @@
+name: JDK 11 Build
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    uses: yaphet17/Reusable-Workflows-POC/.github/workflows/maven.yml@main
+    with:
+      java_version: 11
