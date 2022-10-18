@@ -9,6 +9,6 @@ env:
   BRANCH: ${{ github.event_name == 'pull_request' && format('refs/heads/{0}', github.event.pull_request.head.ref) || github.ref }}
 jobs:
   build:
-    uses: yaphet17/Reusable-Workflows-POC/.github/workflows/maven.yml@${{env.BRANCH}}
+    uses: yaphet17/Reusable-Workflows-POC/.github/workflows/maven.yml@${{GITHUB_REF_NAME}}
     with:
       jdk_version: 17
