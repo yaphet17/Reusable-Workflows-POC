@@ -18,7 +18,7 @@ jobs:
     - name: Set up multiple JDK 
       uses: actions/setup-java@v1
       with:
-        java-version: ${{ inputs.java_version }}
+        java-version: ${{ inputs.jdk_version }}
         distribution: 'temurin'
     - name: Build with Maven
       run: mvn -B package --file pom.xml
