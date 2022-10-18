@@ -1,0 +1,13 @@
+name: JDK 8 Build
+
+on:
+    push:
+        branches: [ main ]
+    pull_request:
+        branches: [ main ]
+
+jobs:
+    build:
+        uses: yaphet/.github/workflows/maven.yml@main
+        with:
+            java_version: 8
