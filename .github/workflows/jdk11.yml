@@ -10,4 +10,4 @@ jobs:
   build:
     uses: yaphet17/Reusable-Workflows-POC/.github/workflows/maven.yml@main
     with:
-      java_version: 11
+      jdk_version: 11
