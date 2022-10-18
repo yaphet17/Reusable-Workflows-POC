@@ -9,5 +9,4 @@ public class ReusableWorkflowsPocApplication {
     public static void main(String[] args) {
         SpringApplication.run(ReusableWorkflowsPocApplication.class, args);
     }
-
 }
