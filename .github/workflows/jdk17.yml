@@ -15,6 +15,6 @@ jobs:
         uses: tj-actions/branch-names@v6
       
       - name: Call workflow
-        uses: yaphet17/Reusable-Workflows-POC/.github/workflows/maven.yml@${{ steps.branch-name.outputs.current_branch }}
+        uses: ./.github/workflows/maven.yml
         with:
          jdk_version: 17
